@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [LotteryAutoTest]" parallel="tests">
+  <parameter name="databasePath" value="config/database.properties"/>
+  <parameter name="driverConfgFilePath" value="config/driver.properties"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="sleepTime" value="800"/>
+  <parameter name="testurl" value="http://test.my-sql.cn/lottery/"/>
+  <parameter name="waitMillisecondsForAlert" value="40000"/>
+  <parameter name="userInfoPath" value="config/user.properties"/>
+  <parameter name="timeOut" value="15"/>
+  <listeners>
+    <listener class-name="com.lottery.web.plugins.arrow.TestResultListener"/>
+    <listener class-name="com.lottery.web.plugins.arrow.RetryListener"/>
+    <listener class-name="com.lottery.web.plugins.arrow.PowerEmailableReporter"/>
+  </listeners>
+  <test thread-count="1" name="单例测试(failed)" parallel="tests">
+    <classes>
+      <class name="com.lottery.web.testcase.login.LoginPage_001_UI_Test">
+        <methods>
+          <include name="uiTest" invocation-numbers="0"/>
+          <include name="startTest"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.lottery.web.testcase.login.LoginPage_001_UI_Test -->
+    </classes>
+  </test> <!-- 单例测试(failed) -->
+</suite> <!-- Failed suite [LotteryAutoTest] -->

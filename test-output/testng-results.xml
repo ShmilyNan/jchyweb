@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LotteryAutoTest" duration-ms="6073" started-at="2018-05-09T08:32:30Z" finished-at="2018-05-09T08:32:36Z">
+    <groups>
+    </groups>
+    <test name="单例测试" duration-ms="6073" started-at="2018-05-09T08:32:30Z" finished-at="2018-05-09T08:32:36Z">
+      <class name="com.whcd.lotterywebui.testcase.login.LoginPage_001_UI_Test">
+        <test-method status="PASS" signature="startTest(org.testng.ITestContext)[pri:0, instance:com.whcd.lotterywebui.testcase.login.LoginPage_001_UI_Test@4d95d2a2]" name="startTest" is-config="true" duration-ms="5191" started-at="2018-05-09T08:32:30Z" finished-at="2018-05-09T08:32:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a346aa9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="uiTest(org.testng.ITestContext)[pri:0, instance:com.whcd.lotterywebui.testcase.login.LoginPage_001_UI_Test@4d95d2a2]" name="uiTest" duration-ms="292" started-at="2018-05-09T08:32:36Z" finished-at="2018-05-09T08:32:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a346aa9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.whcd.lotterywebui.testcase.login.LoginPage_001_UI_Test@4d95d2a2]" name="endTest" is-config="true" duration-ms="578" started-at="2018-05-09T08:32:36Z" finished-at="2018-05-09T08:32:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.whcd.lotterywebui.testcase.login.LoginPage_001_UI_Test -->
+    </test> <!-- 单例测试 -->
+  </suite> <!-- LotteryAutoTest -->
+</testng-results>
