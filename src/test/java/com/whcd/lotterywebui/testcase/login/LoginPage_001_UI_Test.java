@@ -16,7 +16,5 @@ public class LoginPage_001_UI_Test extends LoginFather {
 	public void uiTest(ITestContext context) {
 		LoginFather.loginParpare(context, seleniumUtil);
 		LoginPageHelper.checkInputData(seleniumUtil); 
-
 	}
-
 }

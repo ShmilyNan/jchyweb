@@ -6,6 +6,10 @@
 	<parameter name="browserName" value="chrome" />
 	<!-- user的属性文件地址,此配置文件存储了用户名和密码等信息 -->
 	<parameter name="userInfoPath" value="config/user.properties" />
+	<!-- 投注信息 -->
+	<parameter name="betInfo" value="config/bet.properties" />
+	<!-- 流程接口以及json数据 -->
+	<parameter name="interface_bet" value="config/interface.properties" />
 	<!-- driver的属性配置文件保存路径 -->
 	<parameter name="driverConfgFilePath" value="config/driver.properties" />
 	<!-- 数据库的备份和还原存放路径 -->
@@ -18,11 +22,10 @@
 	<parameter name="timeOut" value="15" />
 	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
 	<parameter name="waitMillisecondsForAlert" value="40000" />
-	<!-- 相同元素中的index值 for goods -->
 
 	<test name="单例测试" preserve-order="true">
 		<classes>
-			<class name="com.whcd.lotterywebui.testcase.login.LoginPage_001_UI_Test"/>
+			<class name="com.whcd.lotterywebui.testcase.betting.Betting_001_OrderBetById_Test"/>
 		</classes>
 	</test>
 

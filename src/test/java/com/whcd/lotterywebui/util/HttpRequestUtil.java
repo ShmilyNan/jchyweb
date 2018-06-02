@@ -14,8 +14,8 @@ public class HttpRequestUtil {
 	/**
 	 * 发送HttpPost请求
 	 * @param strURL:  服务地址
-	 * @param jsonParams: json字符串,例如: "{\"username\":\"鄂F55555\",\"password\":\"123456\"}" ;其中属性名必须带双引号<br/>
-	 * @return 成功:返回json字符串<br/>
+	 * @param jsonParams: json字符串,例如: "{\"username\":\"鄂F55555\",\"password\":\"123456\"}" ;其中属性名必须带双引号
+	 * @return 成功:返回json字符串
 	 */
 	public static String post(String strURL, String jsonParams) {
 		String result="";
@@ -28,12 +28,17 @@ public class HttpRequestUtil {
 			connection.setDoInput(true);
 			//post请求不能使用缓存 故为false
 			connection.setUseCaches(false);
-			//setInstanceFollowRedirects是成员函数，仅作用于当前函数  
+			//setInstanceFollowRedirects是成员函数，仅作用于当前函数
 			connection.setInstanceFollowRedirects(true);
-			// 设定请求的方法为"POST"，默认是GET   
+			// 设定请求的方法为"POST"，默认是GET
 			connection.setRequestMethod("POST"); // 设置请求方式
 			connection.setRequestProperty("Accept", "application/json"); // 设置接收数据的格式
 			connection.setRequestProperty("Content-Type", "application/json"); // 设置发送数据的格式
+			connection.setRequestProperty("clientCode", "003");
+			connection.setRequestProperty("terminal", "PC");
+			connection.setRequestProperty("platformCode", "123");
+			connection.setRequestProperty("deviceId", "123");
+			
 			// 连接，从上述中url.openConnection()至此的配置必须要在connect之前完成
 			connection.connect();
 			OutputStreamWriter out = new OutputStreamWriter(

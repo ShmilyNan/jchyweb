@@ -16,12 +16,12 @@ import org.testng.Assert;
 
 /**
  * @author Lance
- * @description: 读取Excel数据<br>
- *               说明：<br>
- *               Excel放在Data文件夹下<br>
- *               Excel命名方式：测试类名.xls<br>
- *               Excel的sheet命名方式：测试方法名<br>
- *               Excel第一行为Map键值<br>
+ * @description: 读取Excel数据
+ *               说明：
+ *               Excel放在Data文件夹下
+ *               Excel命名方式：测试类名.xlsx
+ *               Excel的sheet命名方式：测试方法名
+ *               Excel第一行为Map键值
  */
 public class ExcelDataProvider implements Iterator<Object[]> {
 
@@ -36,14 +36,14 @@ public class ExcelDataProvider implements Iterator<Object[]> {
 
 	/*
 	 * @description 
-	 * 2个参数：<br>
+	 * 2个参数：
 	 * moduleName - 模块的名称
 	 * caseNum - 测试用例编号
 	 **/
 	public ExcelDataProvider(String moduleName, String caseNum) {
 
 		try {
-			path = "data/" + moduleName + ".xls";
+			path = "data/" + moduleName + ".xlsx";
 			InputStream inputStream = new FileInputStream(path);
 
 			book = Workbook.getWorkbook(inputStream);

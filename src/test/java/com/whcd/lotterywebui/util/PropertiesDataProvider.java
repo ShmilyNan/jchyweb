@@ -16,8 +16,8 @@ import org.apache.commons.configuration2.builder.fluent.Configurations;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
 /**
- * @author Lance<br>
- * @Desription 从.properties文件中读取相关测试数据<br>
+ * @author Lance
+ * @Desription 从.properties文件中读取相关测试数据
  * 
  * */
 public class PropertiesDataProvider {
@@ -32,13 +32,12 @@ public class PropertiesDataProvider {
 			e.printStackTrace();
 		}
 		return String.valueOf(config.getProperty(key));
-
 	}
 	
 	public static void writeProperties(String key,String value) {
 		Properties properties = new Properties();
 		try {
-			properties.load(new FileInputStream("config/goods.properties"));
+			properties.load(new FileInputStream("config/bet.properties"));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (IOException e1) {
@@ -46,7 +45,7 @@ public class PropertiesDataProvider {
 		}
 		OutputStream output = null;
 		try {
-			output = new FileOutputStream("config/goods.properties");
+			output = new FileOutputStream("config/bet.properties");
 	          for (Enumeration<?> e = properties.propertyNames(); e.hasMoreElements();) {
 	                String s = (String) e.nextElement(); // 遍历所有元素
 	                if (s.equals(key)) {
@@ -59,7 +58,7 @@ public class PropertiesDataProvider {
 	            }
 			
 		//	properties.setProperty(key,value);//保存键值对到内存
-			properties.store(output, "wangyang modify" + new Date().toString());// 保存键值对到文件中
+			properties.store(output, "Lance modify" + new Date().toString());// 保存键值对到文件中
 		} catch (IOException io) {
 			io.printStackTrace();
 		} finally {

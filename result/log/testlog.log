@@ -1,31 +1,6 @@
-[2018-05-09 16:32:30] [INFO] RetryCount=0
-[2018-05-09 16:32:30] [INFO] SourceDir=src/test/java/com/lottery/web/testcase/
-[2018-05-09 16:32:30] [INFO] SourceEncoding=UTF-8
-[2018-05-09 16:32:30] [INFO] 当前操作系统是 [Windows 7]
-[2018-05-09 16:32:30] [INFO] 启动测试浏览器[chrome]
-[2018-05-09 16:32:33] [INFO] 最大化浏览器:chrome
-[2018-05-09 16:32:36] [INFO] 打开测试页面:[http://test.my-sql.cn/lottery/]
-[2018-05-09 16:32:36] [INFO] uiTest 测试用例开始执行！
-[2018-05-09 16:32:36] [INFO] start checking login page elements
-[2018-05-09 16:32:36] [INFO] 开始查找元素[By.id: check]
-[2018-05-09 16:32:36] [INFO] 找到了元素 [By.id: check]
-[2018-05-09 16:32:36] [INFO] 开始查找元素[By.id: user]
-[2018-05-09 16:32:36] [INFO] 找到了元素 [By.id: user]
-[2018-05-09 16:32:36] [INFO] 开始查找元素[By.id: password]
-[2018-05-09 16:32:36] [INFO] 找到了元素 [By.id: password]
-[2018-05-09 16:32:36] [INFO] 开始查找元素[By.id: login]
-[2018-05-09 16:32:36] [INFO] 找到了元素 [By.id: login]
-[2018-05-09 16:32:36] [INFO] check login page elements completed
-[2018-05-09 16:32:36] [INFO] start checking login page text
-[2018-05-09 16:32:36] [INFO] 找到了期望的文字: [请输入用户名]
-[2018-05-09 16:32:36] [INFO] 找到了期望的文字: [请输入密码]
-[2018-05-09 16:32:36] [INFO] 找到了期望的文字: [登录]
-[2018-05-09 16:32:36] [INFO] check login page text completed
-[2018-05-09 16:32:36] [INFO] 清除元素 [ id: user]上的内容
-[2018-05-09 16:32:36] [INFO] 输入：[AG00005] 到 [ id: user]
-[2018-05-09 16:32:36] [INFO] 找到了期望的文字: [AG00005]
-[2018-05-09 16:32:36] [INFO] 清除元素 [ id: password]上的内容
-[2018-05-09 16:32:36] [INFO] 输入：[123456] 到 [ id: password]
-[2018-05-09 16:32:36] [INFO] 找到了期望的文字: [123456]
-[2018-05-09 16:32:36] [INFO] uiTest 测试用例执行成功！
-[2018-05-09 16:32:36] [INFO] 执行成功的用例 = uiTest
+[2018-06-02 18:53:38] [INFO] RetryCount=0
+[2018-06-02 18:53:38] [INFO] SourceDir=src/test/java/com/whcd/lotterywebui/testcase/
+[2018-06-02 18:53:38] [INFO] SourceEncoding=UTF-8
+[2018-06-02 18:53:38] [INFO] orderBetting 测试用例开始执行！
+[2018-06-02 18:53:40] [INFO] orderBetting 测试用例执行成功！
+[2018-06-02 18:53:40] [INFO] 执行成功的用例 = orderBetting
