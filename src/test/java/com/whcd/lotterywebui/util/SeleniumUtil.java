@@ -526,7 +526,7 @@ public class SeleniumUtil {
 	/**
 	 * 上传文件，需要点击弹出上传照片的窗口才行
 	 * 
-	 * @param brower
+	 * @param browser
 	 *            使用的浏览器名称
 	 * @param file
 	 *            需要上传的文件及文件名

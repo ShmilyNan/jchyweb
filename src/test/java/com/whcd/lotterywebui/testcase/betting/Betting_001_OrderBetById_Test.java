@@ -30,6 +30,6 @@ public class Betting_001_OrderBetById_Test {
 //		json.addProperty(content, content);
 		String params ="token="+token+"&lotteryType="+lotteryType+"&number="+number+"&content="+content;
 //		HttpRequestUtil.post(url,params);
-		HttpUtils.doPost(url, params);
+		System.out.println(HttpUtils.doPost(url, params));
 	}
 }
